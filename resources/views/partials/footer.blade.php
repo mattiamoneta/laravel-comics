@@ -64,7 +64,7 @@
                     </li>
 
                     @foreach ($social as $item)
-                    <li class="list-inline-item">
+                    <li class="list-inline-item text-primary">
                         <a href="{{$item['href']}}" class="btn btn-circular"><i class="{{$item['icon']}}"></i></a>
                    </li>
                  @endforeach

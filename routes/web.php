@@ -21,3 +21,11 @@ Route::get('/', function () {
     ->with(config('comics'));
 
 })->name('index');
+
+Route::get('/characters', function(){
+
+    return view('characters') 
+    ->with(config('banner'))
+    ->with(config('navigation'));
+
+})->name('characters');

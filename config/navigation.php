@@ -3,34 +3,34 @@
 return[
     "navbar" => [
         [
-            "href" => "#",
+            "href" => "characters",
             "title" => "characters"
         ], [
-            "href" => "#",
+            "href" => "index",
             "title" => "comics"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "movies"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "tv"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "games"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "collectables"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "videos"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "fans"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "news"
         ], [
-            "href" => "#",
+            "href" => "characters",
             "title" => "shop"
         ],
     ],
