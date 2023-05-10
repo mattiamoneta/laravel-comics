@@ -10,9 +10,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li v-for="(link) in navItems" class="nav-item py-4 px-2 text-uppercase small fw-bold">
-                        <a class="nav-link active" aria-current="page" href="link.href">Link</a>
-                    </li>
+                    @foreach($navbar as $item)
+                        <li class="nav-item py-4 px-2 text-uppercase small fw-bold">
+                            <a class="nav-link active" aria-current="page" href="{{$item['href']}}">{{$item['title']}}</a>
+                        </li>
+                    @endforeach
+                    
+            
                 </ul>
             </div>
         </nav>

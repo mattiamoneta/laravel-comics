@@ -12,11 +12,11 @@ footer {
 }
 
 .footer-wrapper {
-    background-image: url('/footer-bg.jpg');
+    background-image: url('../img/footer-bg.jpg');
     background-size: cover;
 
     & .bg-logo {
-        background-image: url('/dc-logo-bg.png');
+        background-image: url('../img/dc-logo-bg.png');
         background-position: center right;
         background-size: cover;
         background-repeat: no-repeat;

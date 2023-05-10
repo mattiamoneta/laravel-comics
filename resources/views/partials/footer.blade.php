@@ -7,31 +7,39 @@
                         <div class="col-lg-3">
                             <h5 class="text-uppercase text-white mb-4">dc comics</h5>
                             <ul class="list-unstyled">
-                                <li v-for="(item) in sectDcComics"><a href="item.href"
-                                        class="text-decoration-none small footer-link">CONTENT</a>
-                                </li>
+                                @foreach ($navbar as $item)
+                                    <li>
+                                        <a href="{{$item['href']}}" class="text-decoration-none text-capitalize small footer-link">{{$item['title']}}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                             <h5 class="text-uppercase text-white mb-4">shop</h5>
                             <ul class="list-unstyled">
-                                <li class="footer-link" v-for="(item) in sectShop"><a href="item.href"
-                                        class="text-decoration-none small footer-link">CONTENT</a>
+                                @foreach ($sectShop as $item)
+                                <li>
+                                    <a href="{{$item['href']}}" class="text-decoration-none small footer-link">{{$item['title']}}</a>
                                 </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="col-lg-3">
                             <h5 class="text-uppercase text-white mb-4">dc</h5>
                             <ul class="list-unstyled">
-                                <li class="footer-link" v-for="(item) in sectDc"><a href="item.href"
-                                        class="text-decoration-none small footer-link">CONTENT</a>
-                                </li>
+                                @foreach ($sectDc as $item)
+                                    <li>
+                                        <a href="{{$item['href']}}" class="text-decoration-none small footer-link">{{$item['title']}}</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="col-lg-3">
                             <h5 class="text-uppercase text-white mb-4">sites</h5>
                             <ul class="list-unstyled">
-                                <li class="footer-link" v-for="(item) in sectSites"><a href="item.href"
-                                        class="text-decoration-none small footer-link">CONTENT</a>
+                                @foreach ($sectSites as $item)
+                                <li>
+                                    <a href="{{$item['href']}}" class="text-decoration-none small footer-link">{{$item['title']}}</a>
                                 </li>
+                            @endforeach
                             </ul>
                         </div>
                     </div>
@@ -54,6 +62,12 @@
                     <li v-for="item in social" class="list-inline-item"><a href="item.href" class="btn btn-circular"><i
                                 class="item.icon"></i></a>
                     </li>
+
+                    @foreach ($social as $item)
+                    <li class="list-inline-item">
+                        <a href="{{$item['href']}}" class="btn btn-circular"><i class="{{$item['icon']}}"></i></a>
+                   </li>
+                 @endforeach
                 </ul>
             </div>
         </div>

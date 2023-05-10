@@ -1,7 +1,7 @@
 @use './colors' as *;
 
 .fs-banner {
-    background-image: url('/public/jumbotron.jpg');
+    background-image: url('../img/jumbotron.jpg');
     background-size: cover;
     height: 500px;
 }

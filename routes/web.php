@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+
+    $banner_items = config('banner');
+    $navigation = config('navigation');
+
+
+    return view('index', $banner_items, $navigation);
+})->name('index');
