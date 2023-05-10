@@ -1,0 +1,33 @@
+@use './colors' as *;
+
+// Footer
+
+footer {
+    background-color: $color-gray-light;
+
+    & .follow {
+        color: $color-primary;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+.footer-wrapper {
+    background-image: url('/footer-bg.jpg');
+    background-size: cover;
+
+    & .bg-logo {
+        background-image: url('/dc-logo-bg.png');
+        background-position: center right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    & a.footer-link {
+        color: $color-secondary;
+        transition: all .1s ease;
+    }
+
+    & a.footer-link:hover {
+        color: white;
+    }
+}

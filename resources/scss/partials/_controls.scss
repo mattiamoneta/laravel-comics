@@ -1,0 +1,26 @@
+@use './colors' as *;
+
+// Buttons
+
+.btn-circular {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+.bg-blue {
+    background-color: $color-primary;
+}
+
+
+.list-unstyled * {
+    padding: 0 !important;
+    margin: 0 !important;
+}

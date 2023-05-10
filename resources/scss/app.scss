@@ -1,1 +1,23 @@
+@use './partials/colors' as *;
+@use './partials/controls';
+@use './partials/navbar';
+@use './partials/footer';
+@use './partials/banner';
+@use './partials/main';
 @import '~bootstrap/scss/bootstrap';
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    background-color: $color-gray-dark;
+}

@@ -1,0 +1,24 @@
+@use './colors' as *;
+
+// Navbar
+
+.navbar-brand {
+    & .nav-logo {
+        height: 70px;
+        padding: 5px;
+    }
+}
+
+.nav-item {
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 3px solid white;
+    transition: all .2s ease;
+
+    &:hover {
+        border-bottom: 3px solid $color-primary;
+    }
+
+    &:hover .nav-link {
+        color: $color-primary;
+    }
+}
