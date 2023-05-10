@@ -7,7 +7,19 @@
             </div>
         
             <div class="stack">
-                <CardItem v-for="(items, index) in shopThumbs" :key="index" :cardname="items.series" :link="items.thumb" />
+
+                @foreach($comics as $item)
+
+                <div class="card bg-transparent border-0 m-3">
+                    <div class="card-img-wrapper">
+                        <img src="{{$item['thumb']}}" alt="cardname">
+                    </div>
+                    <div class="card-body p-0 my-3">
+                        <span class="card-title small">{{$item['title']}}</span>
+                    </div>
+                </div>
+
+                @endforeach
             </div>
         
             <div class="btn-wrapper d-flex justify-content-center">

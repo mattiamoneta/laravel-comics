@@ -1,12 +1,10 @@
 @extends('layouts.base')
 
 @section('page-title')
-    Home Page 1
+    DC Comics - Home Page
 @endsection
-
 
 @section('page-content')
     @include('partials.comicsStack')
     @include('partials.banner')
-
 @endsection
