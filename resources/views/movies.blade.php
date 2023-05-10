@@ -6,4 +6,5 @@
 
 @section('page-content')
     @include('partials.placeholder')
+    @include('partials.banner')
 @endsection

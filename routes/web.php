@@ -25,7 +25,14 @@ Route::get('/', function () {
 Route::get('/characters', function(){
 
     return view('characters') 
-    ->with(config('banner'))
     ->with(config('navigation'));
 
 })->name('characters');
+
+Route::get('/movies', function(){
+
+    return view('movies') 
+    ->with(config('banner'))
+    ->with(config('navigation'));
+
+})->name('movies');

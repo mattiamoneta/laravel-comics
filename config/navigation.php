@@ -9,7 +9,7 @@ return[
             "href" => "index",
             "title" => "comics"
         ], [
-            "href" => "characters",
+            "href" => "movies",
             "title" => "movies"
         ], [
             "href" => "characters",
